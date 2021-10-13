@@ -1,0 +1,141 @@
+.title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: cover;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+    color: seagreen;
+}
+.card-creations {
+    position: relative;
+    height: 15em;
+    width: 90%;
+    margin-top: 0em;
+}
+.card-creations img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-creations-text {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(to right, #f2f2f27a, transparent);
+}
+.card-creations:hover .card-creations-text {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 185, 77, 0.479);
+}
+.card-creations-text h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+    padding-left: 1em;
+    color: rgb(5, 4, 5);
+}
+.see-all-container {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.see-all-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em 2em;
+    border: solid 1px #000;
+    background-color: transparent;
+    color: #000;
+    transition: background-color 1s;
+}
+.see-all-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+.title-creations .see-all-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 900px) {
+    .creations-container {
+      display: grid;
+      grid-template-columns: repeat(4, 15%);
+      grid-template-rows: 40vh 40vh;
+      justify-content: center;
+      grid-gap: 20px 20px;
+    }
+}
+.card-creations {
+    width: 100%;
+    height: 100%;
+}
+.title-creations {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.title-creations .see-all-container {
+    display: block;
+    width: 20%;
+    text-align: center;
+}
+.see-all-container {
+    display: none;
+}
+.card-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #812F33;
+}
+.card {
+    width: 80%;
+  }
+.card img {
+    width: 100%;
+}
+.text-container h2 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+.text-container p {
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    color: #705E78;
+}
+@media screen and (min-width: 900px) {
+    .card {
+          width: 30rem;
+          height: 30rem;
+          position: relative;
+        }
+        .card img {
+          position: absolute;
+          width: 120%;
+          top: -10%;
+          left: -50%;
+        }
+        .text-container {
+          width: 70%;
+          position: absolute;
+          background-color: #F3FEB0;
+          padding: 2rem;
+          bottom: 20%;
+          right: -25%;
+        }
+      }
